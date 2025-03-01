@@ -1,0 +1,29 @@
+{
+  "devDependencies": {
+    "@faker-js/faker": "^9.5.1"
+  },
+  "name": "nodejs-hw-01",
+  "version": "1.0.0",
+  "description": "Вітаємо!",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "get-all": "node src/scripts/getAllContacts.js",
+    "generate": "node src/scripts/generateContacts.js",
+    "add-one": "node src/scripts/addOneContact.js",
+    "count": "node src/scripts/countContacts.js",
+    "remove-last": "node src/scripts/removeLastContact.js",
+    "remove-all": "node src/scripts/removeAllContacts.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/PavelSteep/nodejs-hw-01.git"
+  },
+  "keywords": [],
+  "author": "Pavel_Paul <bpv358@gmail.com>",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/PavelSteep/nodejs-hw-01/issues"
+  },
+  "homepage": "https://github.com/PavelSteep/nodejs-hw-01#readme"
+}
