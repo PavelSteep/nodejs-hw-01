@@ -2,7 +2,7 @@ import { readContacts } from "../utils/readContacts.js";
 
 const getAllContacts = async () => {
   const contacts = await readContacts();
-  console.log("📋 Все контакты:", contacts);
+  console.log("📋 All contacts:", contacts);
 };
 
 getAllContacts();
