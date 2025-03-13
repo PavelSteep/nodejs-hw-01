@@ -1,0 +1,12 @@
+{
+  "watch": ["src"],
+  "ignore": [
+    "lib/*.js",
+    "README",
+    "dist/*",
+    "node_modules/*",
+    "db/db.json"
+  ],
+  "ext": "js,json,env",
+  "exec": "node --inspect src/index.js"
+}

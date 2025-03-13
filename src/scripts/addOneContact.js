@@ -1,3 +1,31 @@
-export const addOneContact = async () => {};
+import { PATH_DB } from "../constants/contacts.js";
+import { readContacts } from "../utils/readContacts.js";
+import fs from 'fs/promises';
 
-addOneContact();
+// Функция для добавления одного контакта
+export const addOneContact = async (newContact) => {
+  try {
+    // Чтение текущих контактов
+    const contacts = await readContacts();
+    
+    // Добавление нового контакта в массив
+    contacts.push(newContact);
+    
+    // Запись обновленного массива в файл
+    await fs.writeFile(PATH_DB, JSON.stringify(contacts, null, 2), 'utf-8');
+    
+    console.log("Contact added successfully");
+  } catch (error) {
+    console.error("Error adding contact:", error);
+    throw new Error("Error adding contact");
+  }
+};
+
+const newContact = {
+  id: "123",
+  name: "John Doe",
+  phone: "123-456-7890",
+  email: "johndoe@example.com",
+};
+
+addOneContact(newContact);
