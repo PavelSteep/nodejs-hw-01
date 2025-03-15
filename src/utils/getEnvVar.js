@@ -1,18 +1,7 @@
-import dotenv from 'dotenv';
-
-dotenv.config();
-
-
-export const getEnvVar = (envVarName, defaulValue) => {
-  const envVar = process.env[envVarName];
-
-  if (!envVar && defaulValue) {
-    return defaulValue; 
-  }
-
-  if (!envVar) {
+export const getEnvVar = (envVarName, defaultValue) => {
+  // Если переменная окружения не найдена, вернуть значение по умолчанию
+  if (!defaultValue) {
     throw new Error(`Missing env var ${envVarName}`);
   }
-
-  return envVar;
+  return defaultValue;
 };
