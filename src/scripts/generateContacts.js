@@ -26,7 +26,4 @@ export const generateContacts = async (number) => {
   }
 };
 
-// Если файл запущен напрямую, выполнить генерацию:
-if (process.argv[1].endsWith("generateContacts.js")) {
   generateContacts(5);
-}

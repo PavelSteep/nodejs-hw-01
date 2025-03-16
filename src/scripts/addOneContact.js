@@ -5,10 +5,8 @@ import fs from 'fs/promises';
 // Функция для добавления одного контакта
 export const addOneContact = async (newContact) => {
   try {
-    // Чтение текущих контактов
     const contacts = await readContacts();
     
-    // Добавление нового контакта в массив
     contacts.push(newContact);
     
     // Запись обновленного массива в файл

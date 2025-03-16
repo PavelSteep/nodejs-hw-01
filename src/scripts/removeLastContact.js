@@ -5,9 +5,9 @@ import fs from 'fs/promises';
 // Функция для удаления последнего контакта
 export const removeLastContact = async () => {
   try {
-    const contacts = await readContacts();  // Чтение текущих контактов
-    if (contacts.length > 0) {
-      contacts.pop();  // Удаляем последний контакт
+    const contacts = await readContacts();
+    if (contacts.length > 0) {л
+      contacts.pop();  // Удаляем поседний контакт
       await fs.writeFile(PATH_DB, JSON.stringify(contacts, null, 2), 'utf-8');  // Записываем обновленные данные в файл
       console.log("Last contact removed successfully");
     } else {
