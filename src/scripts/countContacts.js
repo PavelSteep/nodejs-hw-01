@@ -11,4 +11,10 @@ export const countContacts = async () => {
   }
 };
 
-console.log(await countContacts());
+// Важно, чтобы мы оборачивали вызов в асинхронную функцию
+const count = async () => {
+  const count = await countContacts();
+  console.log(count);
+};
+
+count();

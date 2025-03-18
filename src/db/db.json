@@ -1,1 +1,44 @@
-[]
+[
+  {
+    "id": "8d581f90-e233-49e3-ae20-bfd808a31302",
+    "name": "Louis Kris",
+    "phone": "547-621-6797",
+    "email": "Perry.Leannon-Bogisich@yahoo.com",
+    "job": "Human Implementation Consultant"
+  },
+  {
+    "id": "54411f24-99ee-43bf-9358-aafec5cf6733",
+    "name": "Dean West DDS",
+    "phone": "(594) 255-3756",
+    "email": "Grover.Yost@gmail.com",
+    "job": "Product Research Developer"
+  },
+  {
+    "id": "347ef5df-40bc-42ff-b958-b68d13e2c738",
+    "name": "Jacob Crist",
+    "phone": "860-606-7488 x5853",
+    "email": "Laurence82@gmail.com",
+    "job": "Internal Solutions Analyst"
+  },
+  {
+    "id": "bf075103-ae6e-4aad-ab56-818ecbd594a2",
+    "name": "Glenda Gerlach",
+    "phone": "547.592.5131",
+    "email": "Francesca.Kohler-Gulgowski21@yahoo.com",
+    "job": "International Markets Developer"
+  },
+  {
+    "id": "0aa3ae20-8798-4a33-b557-6e471e5a11f0",
+    "name": "Gary Beatty",
+    "phone": "996.647.4126",
+    "email": "Pascale_Mosciski@gmail.com",
+    "job": "Global Solutions Orchestrator"
+  },
+  {
+    "id": "d2eb2148-24f0-4169-97fd-43277de97aaf",
+    "name": "Kenny Bashirian",
+    "phone": "776.237.9578",
+    "email": "Cletus_Davis@gmail.com",
+    "job": "Product Data Manager"
+  }
+]
